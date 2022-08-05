@@ -1,0 +1,189 @@
+/*In the name of kindly generous ALLAH*/
+/*Thanks ALLAH*/
+
+/*https://irfont.ir/fonts/abdomaster-font/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'abdo-master';
+    src: url("fonts/Abdo-Master/OTF/AbdoMaster-Light_p30download.com.otf") format("opentype"),
+     url("fonts/Abdo-Master/OTF/AbdoMaster-Light_p30download.com.otf") format("woff")
+    ;
+}
+
+
+.arabic {
+    font-family: abdo-master, system-ui !important;
+}
+
+body{
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#151515;
+    display:flex;
+    flex-direction:column;
+    max-width:600px;
+    align-items:center;
+    gap:20px;
+
+}
+
+.align-right{
+    text-align:right;
+}
+
+.align-center{
+    text-align:center;
+}
+
+body *{
+    margin:0;
+    font-family:'Quicksand', system-ui;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:10px;
+    
+}
+
+.verse-container{
+    color:yellow;
+    margin-top:10px;
+    padding:20px;
+    border-radius:5px;
+    border:1px solid yellow;
+    box-shadow:0 0 80px #ff09;
+}
+
+.verse-place{
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+    padding:5px;
+    border-radius:5px;
+    background-color:yellow;
+    color:#151515;
+    width:fit-content;
+}
+
+.verse-place .number{
+    padding:5px;
+    border-radius:2.5px;
+    background-color:#151515;
+    color:yellow;
+}
+
+.believe{
+    color:yellow;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+.believe *{
+    font-family: abdo-master, system-ui !important;
+
+}
+
+footer{
+    padding:10px;
+
+}
+
+.nowday .navigation {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+}
+
+.nowday .navigation .month{
+    background-color:red;
+    padding:10px;
+    border-radius:5px;
+}
+
+.nowday .navigation .days-no {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.nowday .navigation .no{
+    --no-color:yellow;
+    --no-color-bg:#151515;
+    color:var(--no-color);
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    box-sizing: border-box;
+    height:40px;
+    min-width:40px;
+    /* padding:20px; */
+    background-color:var(--no-color-bg);
+    border:1px solid var(--no-color);
+    border-radius:100px;
+    cursor:pointer;
+    transition: color 1000ms,background-color 1000ms;
+}
+@keyframes anim-no-choosing{
+    from{box-shadow:0 0 0 10px var(--no-color);}
+    10%{box-shadow:0 0 0 30px var(--no-color);}
+    to{box-shadow:0 0 0 10px var(--no-color);}
+}
+.nowday .navigation .no-choosed{
+    animation:anim-no-choosing 200ms ease-out;
+}
+.martyr{
+    --no-color:red;
+}
+
+.nowday .navigation .no:before{
+    content:'';
+    display:block;
+    position:absolute;
+    width:6px;
+    height:1px;
+    background-color:var(--no-color);
+    left:-9px;
+}
+
+.blood{
+    --radius:10px;
+    box-shadow:0 0 var(--radius) red;
+}
+
+.blood-step{
+    --radius:0px;
+    box-shadow:0 0 var(--radius) 3px #f002,
+    0 5px var(--radius) 9px #f002,
+    0 8px var(--radius) 15px #f002,
+    0 12px var(--radius) 21px #f002,
+    0 15px var(--radius) 27px #f002;
+}
+
+.nowday .description{
+    margin-top:20px;
+    margin-bottom:40px;
+    --no-color:red;
+    padding:20px;
+    border:1px solid var(--no-color);
+    color:var(--no-color);
+    border-radius:5px;
+}
+.nowday .description .content{
+    margin-top:10px;
+}
+
+.nowday .now{
+    position:relative;
+    margin-left:20px;
+}
