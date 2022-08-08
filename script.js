@@ -2,7 +2,7 @@
 /*Thanks ALLAH*/
 const martyrdomDays = {
     4:"Martyr Shaikh Fazl-o-ALLAH (شیخ فضل اللّٰه)",
-    8:"Atomic-bomb of u.s. to Hiroshima",
+    8:"Atomic-bomb of u.s. to Hiroshima\nMartyr Babaei",
     9:"Tasooa (تاسوعا)",
     10:"Ashoora (عاشورا)"
 }
