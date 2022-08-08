@@ -20,7 +20,7 @@ for(let i=0; i<dayNumbers.length; i++){
     }
 }
 
-nowDay(new Date().getDay()+2)
+nowDay(new Date().getDate()+2)
 
 function chooseDay(dayth){
     dayNumbers.forEach(el=>{
